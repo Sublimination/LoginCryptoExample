@@ -73,7 +73,10 @@ namespace LoginCryptoExample
                 }
                 if (PasswordHash.PasswordHash.ValidatePassword(plainTextPassword, storedHash))
                 {
-                    MessageBox.Show("Passwords Match!! :) ");
+                    //MessageBox.Show("Passwords Match!! :) ");
+                    LoginSuccess loginSuccess = new LoginSuccess(firstName);
+                    loginSuccess.Show();
+                    //this.Close();
                 }
                 else
                 {

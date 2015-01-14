@@ -12,17 +12,19 @@ namespace LoginCryptoExample
 {
     public partial class LoginSuccess : Form
     {
-        public LoginSuccess()
+        public LoginSuccess(string name)
         {
             InitializeComponent();
-            label1.Text = "";
+            label1.Text = "Welcome " + name;
             label2.Text = "Successful Login";
             button1.Text = "Close";
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            this.Close();
         }
+
+        
     }
 }
